@@ -1,0 +1,11 @@
+:root {
+  --primary: #ea580c;
+  --primary_shadow: #c2410c;
+  --primary_light: #fb923c;
+  --secondary: #eab308;
+  --secondary_shadow: #ca8a04;
+  --secondary_light: #fde047;
+  --title: #1f2937;
+  --text: #000;
+  --background: #f3f3f3;
+}
