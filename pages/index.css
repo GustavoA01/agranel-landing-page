@@ -8,7 +8,7 @@ main{
 
 header{
     text-align: center;
-    background-image: url(./imagens/img-2-b.jpg);
+    background-image: url(../assets/img-2-b.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -202,7 +202,7 @@ nav li:hover{
 .EventoContainer{
     margin-top: 80px;
     align-items: center;
-    background-image: url(./imagens/IMG_0173-1024x806-escura.jpg);
+    background-image: url(../assets/IMG_0173-1024x806-escura.jpg);
     height: 415px;
     width: 100%;
     color: var(--background);
