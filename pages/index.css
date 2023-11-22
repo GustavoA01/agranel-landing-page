@@ -98,6 +98,7 @@ header {
 
 .main-banner p {
     font-size: 1rem;
+    font-weight: 300;
 }
 
 .main-banner h1 {
@@ -128,7 +129,7 @@ header {
 /* MAIN */
 
 .section-primary {
-    padding: 0 2rem;
+    padding: 0 4rem;
 }
 
 .valores-container {
@@ -174,115 +175,187 @@ header {
     height: 2.5rem;
 }
 
-.card-valores h3 {
-    /* margin: 20px; */
-}
-
 /*Sobre*/
 
-#SobreContainer {
+#sobre-container {
     display: flex;
-    margin-top: 80px;
-    margin-left: 50px;
-    margin-right: 50px;
     justify-content: space-between;
-    gap: 30px;
+
+    margin-top: 5rem;
+    gap: 2rem;
 }
 
-.sobre {
-    width: 700px;
-    height: 240px;
+.sobre-details {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
 }
 
-.sobre p {
-    font-size: 20px;
+.sobre-details h1 {
+    font-size: 2.4rem;
 }
 
-.sobre button {
-    background-color: var(--secondary_light);
-    width: 175px;
-    height: 40px;
-    margin-top: 20px;
-    border-radius: 10px;
-    font-size: 17px;
+.sobre-details h1::after {
+    content: "";
+    display: block;
+
+    margin-top: 4px;
+
+    width: 50%;
+    height: 0.6rem;
+
+    border-radius: 0.5rem;
+
+    background-color: var(--secondary);
+}
+
+.sobre-details p {
+    font-size: 1.1rem;
+}
+
+.sobre-details button {
+    background-color: var(--secondary);
+
+    padding: 0.8rem 2.5rem;
+    border-radius: 0.5rem;
+
+    font-size: 1rem;
     color: var(--background);
     font-weight: bold;
+
+    transition: background-color 0.3s ease;
+
+    cursor: pointer;
 }
 
-#SobreContainer img {
-    border-radius: 20px;
-    width: 292px;
-    height: 396px;
+.sobre-details button:hover {
+    transition: background-color 0.3s ease;
+    background-color: var(--secondary_shadow);
+}
+
+#sobre-container img {
+    width: 40%;
+    height: 380px;
+    border-radius: 1rem;
 }
 
 /*Evento*/
 
-.EventoContainer {
-    margin-top: 80px;
-    align-items: center;
-    background-image: url(../assets/IMG_0173-1024x806-escura.jpg);
-    height: 415px;
+.evento-container {
     width: 100%;
-    color: var(--background);
+
+    margin-top: 5rem;
+    padding: 10rem 0;
+
+    background-image: url(../assets/IMG_0173-1024x806-escura.jpg);
+
     text-align: center;
+
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    font-size: 22px;
+
+    gap: 1rem;
+
+    color: var(--text_light);
 }
 
-.EventoContainer button {
-    color: var(--background);
+.evento-container h1 {
+    font-size: 3rem;
+}
+
+.evento-container p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.evento-container button {
+    color: var(--text-light);
     background-color: var(--primary_light);
-    width: 250px;
-    height: 34px;
-    margin-top: 20px;
-    border-radius: 10px;
+
+    padding: 0.8rem 2.5rem;
+
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+
     font-weight: bold;
-    font-size: 15px;
+    font-size: 1rem;
+
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.evento-container button:hover {
+    transition: background-color 0.3s ease;
+    background-color: var(--primary_shadow);
 }
 
 /*Pratos*/
 
-.PratosContainer {
-    margin-top: 80px;
-    margin-left: 50px;
-    margin-right: 50px;
+.pratos-container {
+    margin-top: 3rem;
 }
 
-.PratosContainer h1 {
+.pratos-container h1 {
     text-align: center;
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
-.cards {
+.pratos-container h1::after {
+    content: "";
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: block;
+
+    margin-top: 4px;
+
+    align-self: center;
+    text_light: center;
+    width: 8rem;
+    height: 0.6rem;
+
+    border-radius: 0.5rem;
+
+    background-color: var(--secondary);
+}
+
+.pratos-cards-container {
+    margin-top: 4rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.card-pratos {
+    border-radius: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.card-pratos img {
+    width: 100%;
+    height: 250px;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.card-pratos-details {
     display: flex;
-    gap: 20px;
-    justify-content: center;
+    flex-direction: column;
+
+    gap: 1rem;
+    padding: 1.4rem;
 }
 
-.CardPratos {
-    margin-top: 30px;
-    width: 310px;
-    height: 428px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px black;
+.card-pratos-details p {
 }
 
-.CardPratos img {
-    width: 310px;
-    height: 200px;
-    border-radius: 10px 10px 0 0;
-    margin-bottom: 10px;
-}
-
-.CardPratos p {
-    margin: 20px;
-    margin-bottom: 40px;
-}
-
-.CardPratos h3 {
+.card-pratos-details h3 {
     font-size: 23px;
     color: var(--secondary_light);
-    margin-left: 20px;
 }
