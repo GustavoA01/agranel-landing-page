@@ -372,13 +372,13 @@ header {
 }
 
 .form-container, .inputTop{
-    gap: 1rem;
+    gap: 2rem;
 }
 
-.formButton {
-    display: flex;
-    align-items: flex-end;
+.formButton button {
+    justify-content: end;
 }
+
 .inputTop {
     margin-top: 4rem;
     display:grid;
@@ -390,7 +390,13 @@ header {
     width: 100%;
     border-radius: 0.5rem;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1rem;
+    padding-left: 1rem;
+}
+
+.inputMsg {
+    padding-top: 0.5rem;
 }
 
 .inputSobre {
@@ -399,8 +405,4 @@ header {
 
 .inputMsg {
     height: 10rem;
-}
-
-/* Colocar label dentro do input */
-.labelInput {
 }
