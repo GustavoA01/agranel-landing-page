@@ -215,7 +215,7 @@ header {
     font-size: 1.1rem;
 }
 
-.sobre-details button {
+.contato-container button, .sobre-details button {
     background-color: var(--secondary);
 
     padding: 0.8rem 2.5rem;
@@ -230,7 +230,7 @@ header {
     cursor: pointer;
 }
 
-.sobre-details button:hover {
+.contato-container button:hover, .sobre-details button:hover {
     transition: background-color 0.3s ease;
     background-color: var(--secondary_shadow);
 }
@@ -299,12 +299,12 @@ header {
     margin-top: 3rem;
 }
 
-.pratos-container h1 {
+.contato-container h1, .pratos-container h1 {
     text-align: center;
     font-size: 2.5rem;
 }
 
-.pratos-container h1::after {
+.contato-container h1::after, .pratos-container h1::after {
     content: "";
 
     position: absolute;
@@ -358,4 +358,49 @@ header {
 .card-pratos-details h3 {
     font-size: 23px;
     color: var(--secondary_light);
+}
+
+/*Contato*/
+
+.contato-container {
+    margin-top: 3rem; 
+}
+
+.contato-container p {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.form-container, .inputTop{
+    gap: 1rem;
+}
+
+.formButton {
+    display: flex;
+    align-items: flex-end;
+}
+.inputTop {
+    margin-top: 4rem;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.inputSobre, .inputMsg {
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+}
+
+.inputSobre {
+    height: 3rem;
+}
+
+.inputMsg {
+    height: 10rem;
+}
+
+/* Colocar label dentro do input */
+.labelInput {
 }
