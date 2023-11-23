@@ -6,91 +6,114 @@ main{
     flex-direction: column;
 }
 
-.logo{
-    width: 110px;
-    height: 85px;
+header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: rgb(0,0,0,0.8);
+    height: 6rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
 }
 
-nav a{
-    text-decoration: none;
-    color: var(--background);
-}
+.main-nav {
+    width: 100%;
 
-nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-top: -25px;
-    background-color: black;
-    position: fixed;
-    width: 100%;
+
+    padding-left: 4rem;
+    padding-right: 2rem;
 }
 
-nav li:hover{
-    animation: aumenta 0.2s alternate-reverse ease; 
-    animation-fill-mode: forwards;
+.main-nav a {
+    text-decoration: none;
+    color: var(--background);
+    transition: color 0.5s ease;
 }
 
-@keyframes aumenta {
-    to{
-        transform: scale(1);
-    }
-
-    from{
-        transform: scale(1.1);
-    }
+.main-nav a:hover {
+    transition: color 0.5s ease;
+    color: var(--secondary_light);
 }
 
-.MenuHeader{
+.logo {
+    width: 123px;
+    height: 83px;
+}
+
+.links-nav-header {
     display: flex;
-    gap: 30px;
+    gap: 2rem;
 }
 
-.MenuHeader li{
-    font-size: 16px;
-}
 
 h1{
     text-align: center;
-    margin-top: 30px;
+    margin-top: 3rem;
 }
 
-.unidades{
+h1::after{
+    content: "";
+    display: block;
+    margin: auto;
+    margin-top: 4px;
 
+    width: 50%;
+    height: 0.6rem;
+
+    border-radius: 0.5rem;
+
+    background-color: var(--secondary);
 }
 
-
-
-.unidade{
-    margin-top: 80px;
+.unity{
+    margin-top: 8rem;
     display: flex;
     text-align: center;
     justify-content: space-between;
     align-items: center;
 }
 
-.texto{
+.text h3{
+    margin-bottom:2rem;
+}
+
+.text{
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 22rem;
     margin: auto;
-    font-size: 18px;
+    font-size: 1.2rem;
 }
 
-.unidades img {
-    width: 450px;
-    margin-right: 50px;
+.restaurants img {
+    width: 28rem;
+    margin-right: 4.5rem;
 }
 
-.unidade button{
-    background-color: var(--secondary_light);
-    width: 175px;
-    height: 40px;
-    margin-top: 20px;
-    border-radius: 10px;
-    font-size: 17px;
+.unity button{
+    background-color: var(--secondary);
+    width: 13rem;
+    height: 2.5rem;
+    border-radius: 0.8rem;
+    margin: auto;
+    margin-top: 1.7rem;
+    font-size: 1rem;
     color: var(--background);
     font-weight: bold;
+    
+}
+
+.unity button:hover{
+    transition: background-color 0.3s ease;
+    background-color: var(--secondary_shadow);
+}
+
+.sub-title{
+    font-weight: 500;
+    margin-top: 2rem;
 }
