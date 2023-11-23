@@ -215,7 +215,8 @@ header {
     font-size: 1.1rem;
 }
 
-.contato-container button, .sobre-details button {
+.contato-container button,
+.sobre-details button {
     background-color: var(--secondary);
 
     padding: 0.8rem 2.5rem;
@@ -230,7 +231,8 @@ header {
     cursor: pointer;
 }
 
-.contato-container button:hover, .sobre-details button:hover {
+.contato-container button:hover,
+.sobre-details button:hover {
     transition: background-color 0.3s ease;
     background-color: var(--secondary_shadow);
 }
@@ -299,12 +301,14 @@ header {
     margin-top: 3rem;
 }
 
-.contato-container h1, .pratos-container h1 {
+.contato-container h1,
+.pratos-container h1 {
     text-align: center;
     font-size: 2.5rem;
 }
 
-.contato-container h1::after, .pratos-container h1::after {
+.contato-container h1::after,
+.pratos-container h1::after {
     content: "";
 
     position: absolute;
@@ -363,15 +367,19 @@ header {
 /*Contato*/
 
 .contato-container {
-    margin-top: 3rem; 
+    margin-top: 3rem;
 }
 
 .contato-container p {
     text-align: center;
+    /* Espaçamento margin top muito longo, n ficou legal */
     margin-top: 4rem;
 }
 
-.form-container, .inputTop{
+/* Gap só se aplica a display flex e grid, no .formcontainer n está fznd nada */
+
+.form-container,
+.inputTop {
     gap: 2rem;
 }
 
@@ -379,14 +387,23 @@ header {
     justify-content: end;
 }
 
+/* Troca nome das classes para ficar mais entendivel e usa - em vez de camelCase */
+/* inputTop == errado*/
+/* contato-input-grid == certo*/
+
 .inputTop {
     margin-top: 4rem;
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    /* grid-template-rows: 1fr; */
 }
 
-.inputSobre, .inputMsg {
+/* vc pode fzr uma selecao */
+/* contato-input-grid input {
+    css
+} */
+.inputSobre,
+.inputMsg {
     width: 100%;
     border-radius: 0.5rem;
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -399,10 +416,30 @@ header {
     padding-top: 0.5rem;
 }
 
+/* Não usa height pra definir tamanho, use padding */
 .inputSobre {
     height: 3rem;
 }
 
+/* Tira o rezise da text area */
 .inputMsg {
     height: 10rem;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 4rem;
+    padding: 2rem 4rem;
+    background-color: #0f172a;
+}
+
+footer h1 {
+    text-align: center;
+    color: var(--text_light);
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
