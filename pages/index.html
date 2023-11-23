@@ -158,37 +158,36 @@
                     Desde já, agradecemos pelo seu contato!
                 </p>
 
-                <form class="form-container">
-                    <div class="inputTop">
-                        <div class="inputBox">
+                <form>
+                    <div class="contato-input-grid">
+                        <div>
                             <input
                                 type="text"
                                 name="nome"
                                 id="nome"
-                                class="inputSobre"
                                 placeholder="Nome:"
+                                required
                             />
                         </div>
-                        <div class="inputBox">
+                        <div>
                             <input
                                 type="email"
                                 name="email"
                                 id="email"
-                                class="inputSobre"
                                 placeholder="E-mail:"
+                                required
                             />
                         </div>
                     </div>
 
-                    <!-- Colocar margin top nessa div -->
-                    <div>
+                    <div class="contato-input-textarea">
                         <textarea
                             name="mensagem"
-                            class="inputMsg"
                             placeholder="Mensagem:"
+                            required
                         ></textarea>
                     </div>
-                    <div class="formButton">
+                    <div class="form-button">
                         <button type="submit">Enviar</button>
                     </div>
                 </form>

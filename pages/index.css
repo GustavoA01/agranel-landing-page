@@ -372,58 +372,40 @@ header {
 
 .contato-container p {
     text-align: center;
-    /* Espaçamento margin top muito longo, n ficou legal */
-    margin-top: 4rem;
+    margin-top: 3rem;
 }
 
-/* Gap só se aplica a display flex e grid, no .formcontainer n está fznd nada */
-
-.form-container,
-.inputTop {
-    gap: 2rem;
-}
-
-.formButton button {
-    justify-content: end;
-}
-
-/* Troca nome das classes para ficar mais entendivel e usa - em vez de camelCase */
-/* inputTop == errado*/
-/* contato-input-grid == certo*/
-
-.inputTop {
-    margin-top: 4rem;
+.contato-input-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* grid-template-rows: 1fr; */
+    grid-template-rows: 1fr;
+    margin-top: 3rem;
+    gap: 1rem;
 }
 
-/* vc pode fzr uma selecao */
-/* contato-input-grid input {
-    css
-} */
-.inputSobre,
-.inputMsg {
+.contato-input-grid input,
+.contato-container textarea{
     width: 100%;
     border-radius: 0.5rem;
     border: 1px solid rgba(0, 0, 0, 0.2);
     font-family: "Montserrat", sans-serif;
     font-size: 1.1rem;
-    padding-left: 1rem;
+    padding: 1rem;
 }
 
-.inputMsg {
-    padding-top: 0.5rem;
-}
-
-/* Não usa height pra definir tamanho, use padding */
-.inputSobre {
-    height: 3rem;
-}
-
-/* Tira o rezise da text area */
-.inputMsg {
+.contato-container textarea{
     height: 10rem;
+    resize: none;
+}
+
+.contato-input-textarea {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.form-button {
+    display: flex;
+    justify-content: flex-end;
 }
 
 /* Footer */
