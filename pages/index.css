@@ -412,16 +412,67 @@ header {
 
 footer {
     margin-top: 4rem;
-    padding: 2rem 4rem;
+    padding: 2rem 4rem 0.5rem 4rem;
     background-color: #0f172a;
 }
 
-footer h1 {
+footer h1, 
+footer h3, 
+footer p {
     text-align: center;
     color: var(--text_light);
+}
+
+footer a {
+    display: block;
+    text-decoration: none;
+    color: var(--text_light);
+}
+
+footer .lojas-footer h3 {
+    text-decoration: underline;
+}
+
+.links-nav-footer a, 
+.lojas-footer h3, 
+.lojas-footer p {
+    margin-bottom: 1rem;
 }
 
 .footer-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 3rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    justify-items: center;
+}
+
+footer img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.bg-apps-footer {
+    display: flex;
+    background-color: var(--secondary_light);
+    width: 10rem;
+    padding: 0.8rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    align-items: center;
+}
+
+.bg-apps-footer p {
+    color: var(--text);
+    width: 100%;
+    font-weight: 500;
+}
+
+.icons-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    gap: 1rem;
 }
