@@ -141,6 +141,8 @@ header {
     background-color: rgba(243, 243, 243, 0.8);
 }
 
+@media (max-width: 425px) {
+}
 /* MAIN */
 
 .section-primary {
@@ -148,6 +150,10 @@ header {
 
     @media (max-width: 768px) {
         padding: 0 2rem;
+    }
+
+    @media (max-width: 425px) {
+        padding: 0 1rem;
     }
 }
 
@@ -196,6 +202,13 @@ header {
 .card-valor-icon img {
     width: 2.5rem;
     height: 2.5rem;
+}
+
+@media (max-width: 425px) {
+    .valores-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
 
 /*Sobre*/
@@ -266,6 +279,22 @@ header {
     border-radius: 1rem;
 }
 
+@media (max-width: 425px) {
+    #sobre-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .sobre-details {
+        width: 100%;
+    }
+
+    #sobre-container img {
+        width: 100%;
+        height: 380px;
+    }
+}
+
 /*Evento*/
 
 .evento-container {
@@ -318,6 +347,17 @@ header {
     background-color: var(--primary_shadow);
 }
 
+@media (max-width: 425px) {
+    .evento-container h1 {
+        font-size: 2rem;
+    }
+
+    .evento-container p {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+}
+
 /*Pratos*/
 
 .pratos-container {
@@ -352,15 +392,35 @@ header {
     background-color: var(--secondary);
 }
 
+.pratos-scroll {
+    overflow-x: scroll;
+    padding-bottom: 2rem;
+}
+
+.pratos-scroll::-webkit-scrollbar {
+    height: 0.6rem;
+}
+
+.pratos-scroll::-webkit-scrollbar-thumb {
+    background-color: var(--primary_light);
+    border-radius: 1rem;
+}
+
+.pratos-scroll::-webkit-scrollbar-track {
+    background-color: #e4e4e7; /* Cor da pista (parte não arrastável) */
+}
+
 .pratos-cards-container {
+    min-width: fit-content;
     margin-top: 4rem;
 
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    align-items: center;
     gap: 2rem;
 }
 
 .card-pratos {
+    width: 20rem;
     border-radius: 0.5rem;
     border: 1px solid rgba(0, 0, 0, 0.2);
 }
@@ -377,9 +437,6 @@ header {
 
     gap: 1rem;
     padding: 1.4rem;
-}
-
-.card-pratos-details p {
 }
 
 .card-pratos-details h3 {
@@ -404,6 +461,10 @@ header {
     grid-template-rows: 1fr;
     margin-top: 3rem;
     gap: 1rem;
+
+    @media (max-width: 425px) {
+        grid-template-columns: 1fr;
+    }
 }
 
 .contato-input-grid input,
@@ -434,7 +495,7 @@ header {
 
 footer {
     margin-top: 4rem;
-    padding: 2rem 4rem 0.5rem 4rem;
+    padding: 2rem 4rem 0.5rem;
     background-color: #0f172a;
 }
 
@@ -443,6 +504,10 @@ footer h3,
 footer p {
     text-align: center;
     color: var(--text_light);
+}
+
+footer h1.responsive-footer-title {
+    display: none;
 }
 
 footer a {
@@ -464,13 +529,42 @@ footer .lojas-footer h3 {
 .footer-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
     margin-top: 3rem;
-    font-family: "Montserrat", sans-serif;
-    font-size: 1rem;
     justify-items: center;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        margin: 2rem 0;
+    }
 }
 
+@media (max-width: 768px) {
+    .links-nav-footer {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    footer h1.not-responsive-footer-title {
+        display: none;
+    }
+
+    footer h1.responsive-footer-title {
+        display: block;
+        text-align: center;
+    }
+
+    .lojas-footer p {
+        margin-bottom: 2rem;
+    }
+
+    .lojas-footer {
+        margin: 0;
+    }
+
+    .apps-footer {
+        margin-top: 1rem;
+    }
+}
 footer img {
     width: 2.5rem;
     height: 2.5rem;
@@ -481,7 +575,7 @@ footer img {
     background-color: var(--secondary_light);
     width: 10rem;
     padding: 0.8rem;
-    margin: 1rem;
+    margin: 1rem 0;
     border-radius: 1rem;
     align-items: center;
 }
@@ -489,12 +583,12 @@ footer img {
 .bg-apps-footer p {
     color: var(--text);
     width: 100%;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 .icons-footer {
     display: flex;
     justify-content: center;
     margin-top: 3rem;
-    gap: 1rem;
+    gap: 0.8rem;
 }
