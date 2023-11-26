@@ -1,68 +1,29 @@
 @import "../../global/styles/global.css";
 @import "../../global/styles/theme.css";
+@import "../../global/styles/header.css";
+@import "../../global/styles/footer.css";
 
-main{
+#home {
+    background-color: #0f172a;
+}
+
+main {
     display: flex;
     flex-direction: column;
 }
 
-header {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    background: rgb(0,0,0,0.8);
-    height: 6rem;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #fff;
-}
-
-.main-nav {
-    width: 100%;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding-left: 4rem;
-    padding-right: 2rem;
-}
-
-.main-nav a {
-    text-decoration: none;
-    color: var(--background);
-    transition: color 0.5s ease;
-}
-
-.main-nav a:hover {
-    transition: color 0.5s ease;
-    color: var(--secondary_light);
-}
-
-.logo {
-    width: 123px;
-    height: 83px;
-}
-
-.links-nav-header {
-    display: flex;
-    gap: 2rem;
-}
-
-
-h1{
+main h1 {
     text-align: center;
     margin-top: 3rem;
 }
 
-h1::after{
+main h1::after {
     content: "";
     display: block;
     margin: auto;
     margin-top: 4px;
 
-    width: 50%;
+    width: 20%;
     height: 0.6rem;
 
     border-radius: 0.5rem;
@@ -70,7 +31,7 @@ h1::after{
     background-color: var(--secondary);
 }
 
-.unity{
+.unity {
     margin-top: 8rem;
     display: flex;
     text-align: center;
@@ -78,11 +39,11 @@ h1::after{
     align-items: center;
 }
 
-.text h3{
-    margin-bottom:2rem;
+.text h3 {
+    margin-bottom: 2rem;
 }
 
-.text{
+.text {
     display: flex;
     flex-direction: column;
     width: 22rem;
@@ -95,7 +56,7 @@ h1::after{
     margin-right: 4.5rem;
 }
 
-.unity button{
+.unity button {
     background-color: var(--secondary);
     width: 13rem;
     height: 2.5rem;
@@ -105,15 +66,14 @@ h1::after{
     font-size: 1rem;
     color: var(--background);
     font-weight: bold;
-    
 }
 
-.unity button:hover{
+.unity button:hover {
     transition: background-color 0.3s ease;
     background-color: var(--secondary_shadow);
 }
 
-.sub-title{
+.sub-title {
     font-weight: 500;
     margin-top: 2rem;
 }
